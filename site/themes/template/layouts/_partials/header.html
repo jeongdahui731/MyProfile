@@ -83,6 +83,8 @@
         </div>
         {{- $page_url:= .Permalink | absLangURL }}
         <ul id="menu" class="menu">
+            <li><span>Instagram</span></li>
+            <li><span>GitHub</span></li>
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}

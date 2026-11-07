@@ -89,7 +89,8 @@
     column-gap: var(--gap);
 }
 
-.menu a {
+.menu a,
+.menu > li > span {
     font-size: 16px;
 }
 
