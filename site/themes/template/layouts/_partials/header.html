@@ -84,7 +84,7 @@
         {{- $page_url:= .Permalink | absLangURL }}
         <ul id="menu" class="menu">
             <li><a href="https://www.instagram.com/jeongdahui908/">Instagram</a></li>
-            <li><span>GitHub</span></li>
+            <li><a href="https://github.com/jeongdahui731">GitHub</a></li>
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}

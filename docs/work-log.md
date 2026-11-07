@@ -107,3 +107,13 @@
 - Node.js로 HEAD와 비교해 해당 Instagram 요소만 변경되었음을 확인했고 URL의 HTTPS·호스트·경로 검사와 `git diff --check`도 통과했다.
 - 빌드, 공개 사이트의 클릭·Tab·Enter 동작, Instagram 계정의 존재와 비로그인 열람은 미검증이다. 배포 후 상단 Instagram을 클릭하거나 키보드로 실행해 지정 프로필에 도착하는지 확인해야 한다. Instagram 로그인 요구 등 접근 제한도 실제 결과로 기록한다.
 - 추천 커밋 메시지는 `상단 Instagram을 본인 프로필에 연결`이다. 커밋과 push는 사용자가 직접 수행한다.
+
+## 10번째 작업 GitHub 계정 연결
+
+- 작업 일시는 2026년 11월 7일 19시 25분 KST이다.
+- 사용자가 제공한 GitHub ID `jeongdahui731`을 사용해 상단 GitHub를 `https://github.com/jeongdahui731`에 연결했다. 표기는 사용자 선택에 따라 GitHub다.
+- 수정 파일은 `site/themes/template/layouts/_partials/header.html`이며 기존 span을 href가 있는 a 요소로 변경했다. 브라우저 기본 동작으로 같은 탭에서 이동한다.
+- 관련 기준은 P27 본인 GitHub 링크, P29 빈 링크 제거, P41·P42 키보드 도달과 실행이다.
+- Node.js로 HEAD 대비 GitHub 요소만 변경됐음을 확인했다. 링크의 HTTPS·호스트·계정 경로 검사와 `git diff --check`도 통과했다.
+- 빌드·공개 사이트의 클릭·Tab·Enter 동작과 비로그인 계정 열람은 미검증이다. 배포 후 링크로 본인 계정에 도착하는지 확인할 예정이다.
+- 추천 커밋 메시지는 `상단 GitHub를 본인 계정에 연결`이다. 커밋과 push는 사용자가 직접 수행한다.
