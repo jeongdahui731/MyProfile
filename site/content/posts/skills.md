@@ -6,3 +6,5 @@ hiddenInHomeList: true
 pageClass: skills-page
 breadcrumbText: 기술 역량
 ---
+
+{{< skills-outline >}}
