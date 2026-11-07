@@ -44,7 +44,8 @@
 }
 
 
-.post-entry {
+.post-entry,
+.static-card {
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
