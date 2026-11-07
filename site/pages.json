@@ -22,5 +22,9 @@
   "theme": [
     "template"
   ],
-  "title": "jeongdahui731의 포트폴리오"
+  "title": "jeongdahui731의 포트폴리오",
+  "params": {
+    "description": "자기소개와 학습 과정, 실제 활동을 정리하는 개인 포트폴리오입니다.",
+    "author": "jeongdahui731"
+  }
 }
