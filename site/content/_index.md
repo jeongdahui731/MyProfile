@@ -1,4 +1,3 @@
 ---
-title: Welcome
+title: 정다희
 ---
-Welcome to my website.
