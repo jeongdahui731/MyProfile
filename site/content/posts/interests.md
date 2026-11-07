@@ -6,3 +6,5 @@ hideMeta: true
 pageClass: interests-page
 breadcrumbText: 관심 분야
 ---
+
+{{< interests-outline >}}
