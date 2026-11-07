@@ -10,8 +10,7 @@
     font-size: inherit;
 }
 
-.interests-page .breadcrumbs a:active,
-.interests-page .breadcrumbs button:active {
+.interests-page .breadcrumbs a:active {
     color: var(--secondary);
 }
 
