@@ -39,7 +39,3 @@
     font-size: clamp(32px, 5vw, 40px);
     line-height: 1.3;
 }
-
-.interests-outline li:empty {
-    min-height: 104px;
-}
