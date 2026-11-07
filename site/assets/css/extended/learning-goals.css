@@ -1,0 +1,31 @@
+.post-content .learning-goals-list {
+    margin: 24px 0;
+    padding: 4px 0 4px 32px;
+    border-inline-start: 4px solid var(--primary);
+    list-style-type: disc;
+}
+
+.learning-goals-list li::marker {
+    color: var(--primary);
+}
+
+.learning-goals-list li + li {
+    margin-top: 24px;
+}
+
+.learning-goals-list .goal-title {
+    min-height: 1.5em;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.learning-goals-list .goal-description {
+    min-height: 3.2em;
+    margin-top: 8px;
+    color: var(--secondary);
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
