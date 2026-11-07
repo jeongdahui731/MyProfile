@@ -15,7 +15,3 @@
 .post-content .activity-summary p + p {
     margin-top: 16px;
 }
-
-.activity-outline li:empty {
-    min-height: 104px;
-}
