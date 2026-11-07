@@ -2,7 +2,11 @@
 
 <article class="post-single{{ with .Params.pageClass }} {{ . }}{{ end }}">
   <header class="post-header">
+    {{- with .Params.breadcrumbText }}
+    <div class="breadcrumbs">{{ . }}</div>
+    {{- else }}
     {{ partial "breadcrumbs.html" . }}
+    {{- end }}
     <h1 class="post-title entry-hint-parent">
       {{ .Title }}
       {{- if .Draft }}
