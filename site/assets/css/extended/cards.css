@@ -1,0 +1,5 @@
+@media (prefers-reduced-motion: no-preference) {
+    .home-page .post-entry:active {
+        transform: scale(0.99);
+    }
+}
