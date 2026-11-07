@@ -1,0 +1,17 @@
+.activity-summary {
+    margin: 24px 0;
+    padding: 20px;
+    background: var(--border);
+    border: 1px solid var(--tertiary);
+    border-radius: var(--radius);
+    color: var(--primary);
+}
+
+.post-content .activity-summary p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.post-content .activity-summary p + p {
+    margin-top: 16px;
+}
