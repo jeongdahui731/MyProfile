@@ -1,0 +1,21 @@
+{
+  "checkedAtKST": "2026-11-08 01:10:56 +09:00",
+  "visibility": "public",
+  "remoteMain": "c8da12131047bbe000cd8df1754f7030390acb40",
+  "runs": [
+    {
+      "head_sha": "c8da12131047bbe000cd8df1754f7030390acb40",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "push",
+      "html_url": "https://github.com/jeongdahui731/MyProfile/actions/runs/42380499015"
+    },
+    {
+      "head_sha": "51df06f658bd6d48534e98d4ca4e4c9ecc3e1c8e",
+      "status": "completed",
+      "conclusion": "success",
+      "event": "push",
+      "html_url": "https://github.com/jeongdahui731/MyProfile/actions/runs/42379904043"
+    }
+  ]
+}
