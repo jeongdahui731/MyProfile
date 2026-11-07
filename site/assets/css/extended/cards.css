@@ -1,7 +1,8 @@
 @media (prefers-reduced-motion: no-preference) {
     .home-page .post-entry:active,
     .home-page .learning-goals-card:active,
-    .home-page .skills-card:active {
+    .home-page .skills-card:active,
+    .home-page .activities-card:active {
         transform: scale(0.99);
     }
 }
