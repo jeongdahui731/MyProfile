@@ -97,3 +97,13 @@
 - Node.js로 HEAD와 비교하여 기존 메뉴 안에 두 span 텍스트만 추가되었고 메뉴 글자 크기 규칙이 적용되었음을 확인했다. `git diff --check`도 통과했다.
 - Hugo 빌드·실제 화면은 미검증이다. 배포 후 PC와 모바일의 상단 표시·넘침과 두 테마의 가독성을 확인할 예정이다.
 - 추천 커밋 메시지는 `상단 메뉴에 Instagram과 GitHub 텍스트 배치`다. 커밋과 push는 사용자가 직접 수행한다.
+
+## 9번째 작업 Instagram 프로필 링크 연결
+
+- 작업 일시는 2026년 11월 7일 19시 17분 KST이다.
+- 사용자가 제공한 Instagram 사용자 이름 `jeongdahui908`을 근거로 프로필 주소 `https://www.instagram.com/jeongdahui908/`를 구성했다.
+- `site/themes/template/layouts/_partials/header.html`의 Instagram span을 실제 href가 있는 a 요소로 변경했다. 브라우저 기본 동작에 따라 같은 탭에서 이동한다.
+- 관련 기준은 P28 외부 링크 유효성, P29 빈 링크 제거, P41·P42 키보드 도달과 실행이다. 소스 변경만으로 실제 동작의 충족을 확정하지 않는다.
+- Node.js로 HEAD와 비교해 해당 Instagram 요소만 변경되었음을 확인했고 URL의 HTTPS·호스트·경로 검사와 `git diff --check`도 통과했다.
+- 빌드, 공개 사이트의 클릭·Tab·Enter 동작, Instagram 계정의 존재와 비로그인 열람은 미검증이다. 배포 후 상단 Instagram을 클릭하거나 키보드로 실행해 지정 프로필에 도착하는지 확인해야 한다. Instagram 로그인 요구 등 접근 제한도 실제 결과로 기록한다.
+- 추천 커밋 메시지는 `상단 Instagram을 본인 프로필에 연결`이다. 커밋과 push는 사용자가 직접 수행한다.

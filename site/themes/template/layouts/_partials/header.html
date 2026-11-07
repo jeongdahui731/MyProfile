@@ -83,7 +83,7 @@
         </div>
         {{- $page_url:= .Permalink | absLangURL }}
         <ul id="menu" class="menu">
-            <li><span>Instagram</span></li>
+            <li><a href="https://www.instagram.com/jeongdahui908/">Instagram</a></li>
             <li><span>GitHub</span></li>
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
