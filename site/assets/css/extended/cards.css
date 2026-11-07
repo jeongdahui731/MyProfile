@@ -6,3 +6,10 @@
         transform: scale(0.99);
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .home-page .static-card:hover {
+        transform: none;
+        transition: none;
+    }
+}
