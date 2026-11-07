@@ -8,3 +8,5 @@ breadcrumbText: 실제 활동
 ---
 
 {{< activity-summary >}}
+
+{{< activity-outline >}}
