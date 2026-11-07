@@ -23,3 +23,13 @@
 - Node.js 검사에서 JSON 파싱, 이전 설정 보존, 설명·작성자 값 검증을 통과했다. `git diff --check`도 통과했다. Git은 작업 기록 파일의 LF를 향후 CRLF로 변환한다는 안내를 표시했다.
 - Hugo 빌드와 공개 사이트의 메타 설명·작성자 반영은 미검증이다. 사용자 push 후 배포된 페이지 소스에서 description과 author 메타 정보를 확인할 예정이다.
 - 추천 커밋 메시지는 `사이트 설명과 작성자 정보 설정`이다. 이번 작업의 커밋 SHA는 사용자 커밋 이후 기록한다.
+
+## 작성자 실명 반영과 한국어 문서 언어 설정
+
+- 작업 일시는 2026년 11월 7일 16시 36분 KST이다.
+- 사용자 요청에 따라 `site/pages.json`의 `params.author`를 `jeongdahui731`에서 `정다희`로 변경했다.
+- 세 번째 작업으로 `defaultContentLanguage`를 `ko`, `languageCode`를 `ko-KR`로 설정했다. 한국어로 작성할 홈페이지의 문서 언어를 명시하기 위한 변경이며 관련 기준은 P48이다.
+- 실제 테마의 `site/themes/template/layouts/baseof.html`에서 밝은 테마·어두운 테마·자동 테마 모두 HTML lang에 `site.Language`를 사용하는 것을 확인했다.
+- Node.js 검사에서 JSON 파싱, 요청한 작성자·언어 값, 그 외 기존 설정 보존을 확인했다. `git diff --check`도 통과했다.
+- Hugo 빌드와 생성 HTML 및 공개 화면은 미검증이다. 사용자 push 후 같은 SHA의 Actions 성공을 확인하고 공개 홈페이지 페이지 소스의 `<html lang="ko">`와 author 메타 값 `정다희`를 확인할 예정이다.
+- 추천 커밋 메시지는 `작성자 실명 반영 및 한국어 문서 언어 설정`이다. 커밋과 push는 사용자가 직접 수행한다.
