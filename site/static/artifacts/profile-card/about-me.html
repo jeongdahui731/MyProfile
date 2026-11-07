@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>flex와 미디어 쿼리 나눠 맡기</title>
+  <style>
+  *{box-sizing: border-box;}
+
+  body {
+    font-family: sans-serif;
+    margin: 16px;
+    background: #eee;
+  }
+
+  .card {
+    width: 600px;
+    max-width: 100%;
+    margin: 30px auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 30px;
+  }
+
+  .profile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .profile img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+    margin-top: 16px;
+  }
+
+  .buttons li {
+    flex: 1;
+    padding: 12px 20px;
+    background: #eee;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .buttons li:active{
+    transform: scale(0.95);
+    background: #ddd;
+  }
+
+  @media (max-width: 500px) {
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="profile">
+      <img src="토트넘 로고.jpg" alt="토트넘 로고 사진">
+      <div>
+        <h1>Tottenham Hotspur</h1>
+        <p>스포츠팀</p>
+      </div>
+    </div>
+
+    <ul class="buttons">
+      <li>팔로우</li><li>메시지 보내기</li><li>Shop</li>
+    </ul>
+
+  </div>
+</body>
+</html>
