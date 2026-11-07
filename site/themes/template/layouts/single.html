@@ -3,7 +3,11 @@
 <article class="post-single{{ with .Params.pageClass }} {{ . }}{{ end }}">
   <header class="post-header">
     {{- with .Params.breadcrumbText }}
-    <div class="breadcrumbs">{{ . }}</div>
+    <nav class="breadcrumbs" aria-label="현재 위치">
+      <a href="{{ $.Site.Home.RelPermalink }}">홈</a>
+      <span aria-hidden="true">&gt;</span>
+      <span aria-current="page">{{ . }}</span>
+    </nav>
     {{- else }}
     {{ partial "breadcrumbs.html" . }}
     {{- end }}
