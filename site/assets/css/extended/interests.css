@@ -1,6 +1,7 @@
 .interests-page .breadcrumbs,
 .learning-goals-page .breadcrumbs,
-.skills-page .breadcrumbs {
+.skills-page .breadcrumbs,
+.activities-page .breadcrumbs {
     color: var(--primary);
     font-size: 16px;
     line-height: 1.5;
@@ -10,26 +11,30 @@
 
 .interests-page .breadcrumbs a,
 .learning-goals-page .breadcrumbs a,
-.skills-page .breadcrumbs a {
+.skills-page .breadcrumbs a,
+.activities-page .breadcrumbs a {
     font-size: inherit;
 }
 
 .interests-page .breadcrumbs a:active,
 .learning-goals-page .breadcrumbs a:active,
-.skills-page .breadcrumbs a:active {
+.skills-page .breadcrumbs a:active,
+.activities-page .breadcrumbs a:active {
     color: var(--secondary);
 }
 
 .interests-page .breadcrumbs [aria-hidden="true"],
 .learning-goals-page .breadcrumbs [aria-hidden="true"],
-.skills-page .breadcrumbs [aria-hidden="true"] {
+.skills-page .breadcrumbs [aria-hidden="true"],
+.activities-page .breadcrumbs [aria-hidden="true"] {
     color: var(--secondary);
     font-weight: 600;
 }
 
 .interests-page .post-title,
 .learning-goals-page .post-title,
-.skills-page .post-title {
+.skills-page .post-title,
+.activities-page .post-title {
     margin-top: 8px;
     font-size: clamp(32px, 5vw, 40px);
     line-height: 1.3;
