@@ -6,7 +6,7 @@
     <nav class="breadcrumbs" aria-label="현재 위치">
       <a href="{{ $.Site.Home.RelPermalink }}">홈</a>
       <span aria-hidden="true">&gt;</span>
-      <span aria-current="page">{{ . }}</span>
+      <button type="button" aria-current="page">{{ . }}</button>
     </nav>
     {{- else }}
     {{ partial "breadcrumbs.html" . }}
